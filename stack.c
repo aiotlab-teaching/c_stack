@@ -37,8 +37,7 @@ int main(void) {
 		printf("Stack is empty\n");
 	}else{
 		for(i=S.top; i>-1; i--){
-			printf("[%2d]\t",i);
-			printf("%d\n",pop(&S));				
+			printf("[%2d] %d\n", i, pop(&S));
 		}
 	}
  	
@@ -54,8 +53,6 @@ void push(struct stack *p, int x) {
 	}
 	else {  
 		//Write your code here!
-		
-		return ;                                                          
 	}	
 }
 
@@ -72,7 +69,6 @@ int pop(struct stack *p) {
 
 int isEmpty(struct stack *p) {
 	// Write your code here!
-	return 0;
 }
 
 int isFull(struct stack *p) {
