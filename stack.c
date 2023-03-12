@@ -43,7 +43,6 @@ int main(void) {
  	
 	return 0;
 }
-/*---------------------------------------------------------------------------------------------------*/
 
 void push(struct stack *p, int x) {                                                
 	if (isFull(p)) {  
@@ -51,7 +50,7 @@ void push(struct stack *p, int x) {
 		exit(1); 
 	}
 	else {  
-		//Write your code here!
+		//TODO: Write your code here!
 	}	
 }
 
