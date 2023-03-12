@@ -18,7 +18,7 @@ int pop(struct stack *p);
 int main(void) {
     	S.top = S1.top = -1;
 
-    	printf("Input the max number of data to create a stack.\n");
+    	printf("Input the data to create a stack.\n");
     	int nums;   
     	printf("How many data? ");
     	scanf("%d",&nums);
