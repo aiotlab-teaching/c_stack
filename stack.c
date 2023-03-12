@@ -1,12 +1,12 @@
-#include <stdio.h>
+#include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
 
 #define SIZE 100
 
 struct stack{
-	int data[SIZE];
-	int top;
+    int data[SIZE];
+    int top;
 };
 struct stack S, S1;
 
@@ -16,19 +16,19 @@ void push(struct stack *p, int x);
 int pop(struct stack *p);	
 
 int main(void) {
-	S.top = S1.top = -1;
+    	S.top = S1.top = -1;
 
-   	printf("Input n numbers to create a stack.\n");
-    int nums;   
-    printf("How many data? ");
-    scanf("%d",&nums);
+    	printf("Input the max number of data to create a stack.\n");
+    	int nums;   
+    	printf("How many data? ");
+    	scanf("%d",&nums);
 
-	//push n numbers to stack
-	int x;
-	for(int i=0; i<nums; i++){
+    	//push n numbers to stack
+    	int x;
+    	for(int i=0; i<nums; i++){
 		scanf("%d",&x);
 		push(&S,x);
-	}
+    	}
 	
 	//print stack 
 	printf("The stack is: \n");
@@ -44,7 +44,6 @@ int main(void) {
 	return 0;
 }
 /*---------------------------------------------------------------------------------------------------*/
-
 
 void push(struct stack *p, int x) {                                                
 	if (isFull(p)) {  
@@ -68,7 +67,7 @@ int pop(struct stack *p) {
 }
 
 int isEmpty(struct stack *p) {
-	// Write your code here!
+	//TODO: Write your code here!
 }
 
 int isFull(struct stack *p) {
